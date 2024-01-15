@@ -1,6 +1,20 @@
-let nameCharacter = "Desbugando a Função"
-let xpCharacter = 99
-console.log(nameCharacter + " tem " + xpCharacter + " de Xp")
+calculatorRank(100, 36)
+
+function calculatorRank(victories,defeats){
+    let calculation = victories - defeats
+    for (let ferro =0; ferro <=10; ferro++){
+        if (calculation === ferro) {
+            console.log("O Herói tem de saldo de " + victories + " e esta no nivel de Ferro" )
+        } }
+    for (let bronze = 11; bronze <=20; bronze++){
+        if (calculation === bronze) {
+            console.log("O Herói tem de saldo de " + victories + " e esta no nivel de Bronze" )
+            } }
+}
+
+
+
+    
 
 
 
@@ -8,16 +22,3 @@ console.log(nameCharacter + " tem " + xpCharacter + " de Xp")
 
 
 
-
-
-
-
-//Se vitórias for menor do que 10 = Ferro
-//Se vitórias for entre 11 e 20 = Bronze
-//Se vitórias for entre 21 e 50 = Prata
-//Se vitórias for entre 51 e 80 = Ouro
-//Se vitórias for entre 81 e 90 = Diamante
-//Se vitórias for entre 91 e 100= Lendário
-//Se vitórias for maior ou igual a 101 = Imortal
-
-//"O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
